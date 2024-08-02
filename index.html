@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2</title>
+    <style>
+/* registration from task */
+       *
+       {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'montserrat', sans-serif;
+       }
+       body
+       {
+        background-color: aqua;
+       }
+       .wrapper
+       {
+        margin-top: 50px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .registration_form
+       {
+        background-color: white;
+        padding:25px;
+        border-radius: 5px;
+        width:400px;
+       }
+       .registration_form .tittle
+       {
+        text-align: center;
+        font-size:25px ;
+        text-transform: uppercase;
+        color: white;
+        background-color: blue;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-top: -25px;
+        margin-left: -25px;
+        margin-right: -25px;
+       }
+       .form_wrap
+       {
+        margin-top:35px;
+       }
+       .form_wrap .input_wrap
+       {
+        margin-bottom:15px;
+       }
+       .form_wrap .input_wrap label
+       {
+        display: block;
+        margin-bottom: 3px;
+        color: black;
+       }
+       .form_wrap .input_grp
+       {
+        display:flex;
+        justify-content: space-between;
+       }
+       .form_wrap .input_grp input[type="text"]
+       {
+        width:165px;
+       }
+       .form_wrap input[type="text"]
+       {
+        width: 100%;
+        border-radius: 3px;
+        border: 1,3px solid rgb(128, 128, 128);
+        padding: 10px;
+        outline: none;
+       }
+       .form_wrap input[type="text"]:focus
+       {
+        border-color: blueviolet;
+       }
+       .form_wrap ul
+       {
+        border: 1px solid skyblue;
+        width: 70%;
+        background:ghostwhite;
+        margin-left: 15%;
+        padding:8px 15px;
+        border-radius: 20px;
+        display:flex ;
+        justify-content: center;
+       }
+       .form_wrap ul li:first-child
+       {
+        margin-right:25px;
+       }
+       .form_wrap ul .radio_wrap .input_radio
+       {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+       }
+       .form_wrap ul .radio_wrap span
+       {
+        display:inline-block;
+        font-size: 17px;
+        padding:3px 15px;
+        border-radius: 15px;
+        color: black;
+       }
+       .form_wrap .input_radio:checked ~span
+       {
+        background-color: blue;
+        color: aliceblue;
+       }
+       .form_wrap .submit_btn
+       {
+        width: 100%;
+        background: blue;
+        padding: 10px;
+        border: 0;
+        color: white;
+        font-size: 17x;
+        border-radius: 3px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;                                                                                                
+       }
+       .form_wrap .submit_btn:hover
+       {
+        background: blueviolet;
+       }
+ </style>
+</head>
+<body>
+<!-- registration form -->
+        <div class="wrapper">
+            <div class="registration_form">
+                <div class="tittle">Registration form</div>
+                <form action="formation.html">
+                    <div class="form_wrap">
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname">
+                            </div>
+                            </div>
+                            <div class="input_wrap">
+                                <label for="eadd">Email Address</label>
+                                <input type="text" id="eadd">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="ci">City</label>
+                                <input type="text" id="ci">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="cname">Country</label>
+                                <input type="text" id="cname">
+                            </div>
+                            <div class="input_wrap">
+                                <label>Gender</label>
+                                <ul>
+                                    <li>
+                                        <label class="radio_wrap">
+                                            <input type="radio" name="gender" value="male" class="input_radio" checked>
+                                            <span>Male</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio_wrap">
+                                            <input type="radio" name="gender" value="Female" class="input_radio">
+                                            <span>Female</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="submit" value="Register Now" class="submit_btn">                           
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
